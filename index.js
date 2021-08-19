@@ -10,6 +10,6 @@ app.get('/', (req, res)=>{
     res.render('resume');
 })
 
-app.listen(8080, ()=>{
-    console.log("Listening on PORT 8080")
-})
+app.listen((process.env.PORT,process.env.IP || 3000), function(){
+    console.log('Server is runing');
+ })
